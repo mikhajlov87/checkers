@@ -1,0 +1,103 @@
+body {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    min-height: 230px;
+    min-width: 320px;
+    padding: 0;
+}
+.main-button {
+    align-items: center;
+    background: #c3c3c3;
+    border: 2px solid #000;
+    box-sizing: border-box;
+    box-shadow: 0 0 1em #333 inset;
+    color: #000;
+    font: 400 3em 'Tahoma';
+    display: none;
+    height: 100%;
+    justify-content: center;
+    left: 0;
+    position: absolute;
+    text-decoration: none;
+    text-shadow: 0.1em 0.1em 0.1em #fff;
+    text-transform: capitalize;
+    top: 0;
+    opacity: 0.9;
+    width: 100%;
+}
+.main-button.active {
+    display: flex;
+}
+.chessboard {
+    background: #c3c3c3;
+    border: 1px solid #000;
+    box-shadow: 1em 1em 4em #000, -1em 1em 4em #000;
+    box-sizing: border-box;
+    display: flex;
+    font: 700 1.5em 'Arial Black';
+    flex-wrap: wrap;
+    height: 100%;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+}
+.field {
+    align-items: center;
+    box-sizing: border-box;
+    border: 1px solid #000;
+    display: inline-flex;
+    height: calc(100% / 8);
+    justify-content: center;
+    width: calc(100% / 8);
+}
+.white {
+    background: #fff;
+}
+.black {
+    background: #000;
+}
+.checker {
+    display: inline-flex;
+    box-shadow: 0.063em 0.025em #000;
+    width: 75%;
+    height: 75%;
+    border: 1px solid #000;
+    border-radius: 50%;
+}
+.checker.black {
+    border: 1px solid #fff;
+}
+.storage {
+    align-items: center;
+    background: #c3c3c3;
+    border: 2px solid #000;
+    box-sizing: border-box;
+    box-shadow: 1em 1em 3em #000;
+    flex-direction: column;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    position: absolute;
+    width: 15%;
+}
+.storage.right {
+    box-shadow: -1em 1em 3em #000;
+}
+.storage .checker.beaten {
+    height: calc(100% / 5);
+    margin: 2%;
+    width: calc(100% / 2.5);
+}
+.left {
+    left: 10%;
+}
+.right {
+    right: 10%;
+}
+.btn-move {
+    box-shadow: 0.3em 0.3em 0.5em #fff;
+    margin: 2% 5%;
+    width: 90%;
+}
